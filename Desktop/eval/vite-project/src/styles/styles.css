@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* CONTAINER PRINCIPAL */
+  .container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* TITRE */
+  h1 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* FORMULAIRE */
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+  }
+  
+  .form input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* BOUTON AJOUTER */
+  .form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* LISTE DES DÉPENSES */
+  .expense-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  /* STYLE DE CHAQUE DÉPENSE */
+  .expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+    border-left: 5px solid #007bff;
+  }
+  
+  /* BOUTON SUPPRIMER */
+  .expense-item button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .expense-item button:hover {
+    background: darkred;
+  }
+  
+  /* RÉSUMÉ DES DÉPENSES */
+  .summary {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .summary h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .summary ul {
+    padding-left: 15px;
+  }
+  
+  .summary li {
+    margin: 5px 0;
+  }
+  
